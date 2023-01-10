@@ -1,0 +1,14 @@
+name: CustomPlayerModes
+author: ashz
+main: io.ashz.CustomPlayerModes
+version: 1.0
+api-version: 1.19
+description: "Customized gamemodes for the user."
+commands:
+  mode:
+    description: Enter a customized mode
+    aliases: m
+    permission: CustomPlayerModes.mode
+    permission-message: "You do not have permission to run this command!"
+    usage: "/mode [survival/build] <대상>"
+    default: false
