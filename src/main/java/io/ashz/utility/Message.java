@@ -12,10 +12,12 @@ public class Message {
             ChatColor.GRAY+"] ";
     public static String warning = ChatColor.GRAY+"["+
             ChatColor.YELLOW+"!"+
-            ChatColor.GRAY+"] ";
+            ChatColor.GRAY+"] "+
+            ChatColor.YELLOW;
     public static String error = ChatColor.GRAY+"["+
             ChatColor.RED+"!"+
-            ChatColor.GRAY+"] ";
+            ChatColor.GRAY+"] "+
+            ChatColor.RED;
 
     public static void sendConsoleMessage(CustomPlayerModes plugin, String msg) {
         plugin.getServer().getConsoleSender().sendMessage(msg);
