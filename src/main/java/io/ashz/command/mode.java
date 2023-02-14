@@ -49,6 +49,7 @@ public class mode implements CommandExecutor {
             playerProfile.getConfiguration().set(modeString + ".food", p.getFoodLevel());
             playerProfile.getConfiguration().set(modeString + ".health", p.getHealth());
 
+            playerProfile.getConfiguration().set(modeString + ".inventory", null);
             for(int i = 0; i < playerStack.length; i++) {
                 if(playerStack[i] != null) {
                     playerProfile.getConfiguration().set(modeString + ".inventory." + i, playerStack[i]);
@@ -119,6 +120,7 @@ public class mode implements CommandExecutor {
             playerProfile.getConfiguration().set(modeString + ".food", p.getFoodLevel());
             playerProfile.getConfiguration().set(modeString + ".health", p.getHealth());
 
+            playerProfile.getConfiguration().set(modeString + ".inventory", null);
             for(int i = 0; i < playerStack.length; i++) {
                 if(playerStack[i] != null) {
                     playerProfile.getConfiguration().set(modeString + ".inventory." + i, playerStack[i]);
